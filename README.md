@@ -1,4 +1,9 @@
-# 🔁 Rete Sequenziale — Riconoscitore di Pattern `ba(dc)*bac`
+# 🔁 Riconoscitore di pattern `ba(dc)*bac` — macchina di Mealy
+
+> **Mealy state machine that recognizes the pattern `ba(dc)*bac`** (overlapping matches), built as a synchronous sequential circuit in the [Digital](https://github.com/hneemann/Digital) simulator. University project (Computer Architecture course), Italian documentation.
+
+![Digital](https://img.shields.io/badge/Simulator-Digital-1f6feb) ![FSM](https://img.shields.io/badge/Mealy-state%20machine-8a2be2) ![License](https://img.shields.io/badge/License-MPL--2.0-orange)
+
 
 Progetto universitario per il corso di **Calcolatori Elettronici** — progettazione e realizzazione di una **macchina di Mealy** in grado di riconoscere sequenze che rispettano il formato `ba(dc)*bac`, realizzata con il simulatore [Digital](https://github.com/hneemann/Digital).
 
@@ -95,3 +100,12 @@ La macchina è descritta da un automa a stati finiti (FSM) con **3 flip-flop D**
 - Riconoscimento corretto di tutte le sequenze valide `ba(dc)*bac` con `n ≥ 0` ripetizioni di `dc`
 - Gestione corretta delle sequenze sovrapposte (overlap): dopo l'accettazione, la macchina individua automaticamente eventuali prefissi condivisi con la sequenza successiva
 - Uscita Mealy: `z=0` viene prodotta nell'ultimo colpo di clock della sequenza accettata, senza stato di accettazione separato
+
+---
+
+## 📄 Licenza
+
+Mozilla Public License 2.0, vedi [`LICENSE`](LICENSE).
+---
+
+*Keywords: Mealy machine, finite state machine, sequential circuit, pattern recognition, regular expression, Digital simulator, digital logic, computer architecture, university project.*
